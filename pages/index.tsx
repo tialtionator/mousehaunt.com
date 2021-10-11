@@ -6,7 +6,7 @@ import {Container} from '../styles/Home'
 import FirstSection, { beforeChange } from '../components/FirstSection'
 import SecondSection from '../components/SecondSection'
 import ThirdSection from '../components/ThirdSection'
-import config from './utils/config';
+import config from '../utils/config';
 import { useState } from 'react';
 
 const Home: NextPage = () => {

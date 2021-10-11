@@ -1,4 +1,4 @@
-import config from '../../pages/utils/config'
+import config from '../../utils/config'
 
 export default function beforeChange({from, to}: {from:number, to: number}) {
   const first = document.getElementsByClassName('first') as unknown as HTMLElement[];
