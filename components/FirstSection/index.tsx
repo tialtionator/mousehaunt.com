@@ -2,11 +2,12 @@ import type { NextPage } from 'next'
 
 import {Container, Header, Hero} from './styles'
 import Image from 'next/image'
+import config from '../../pages/utils/config'
 
 const FirstSection: NextPage = () => {
   return (
     <Container id="home">
-      <Header>
+      <Header id="header" className="first">
         <div className="left">
           <a href="#home">
             <Image
@@ -29,7 +30,7 @@ const FirstSection: NextPage = () => {
         </div>
       </Header>
 
-      <Hero>
+      <Hero id="hero" className="first">
         <div className="top">
           <div className="mouse">MOUSE</div>
           <div className="haunt">HAUNT</div>
@@ -66,3 +67,39 @@ const FirstSection: NextPage = () => {
 
 
 export default FirstSection
+
+export function beforeChange({from, to}: {from:number, to: number}) {
+  const first = document.getElementsByClassName('first') as unknown as HTMLElement[];
+  console.log({from, to})
+  const ticker = 10
+  const steps = 3
+  let i = 0
+  if(from === 0 && to === 1) {
+    let id = setInterval(() => {
+      i++
+      if(i >= ticker/steps) {
+        Array.from(first).map(element => element.style.opacity =  '0')
+        clearInterval(id)
+      }
+      else {
+        const opacity = (1 - steps*i/ticker).toString()
+        console.log(opacity)
+        Array.from(first).map(element => element.style.opacity = opacity)
+      }
+    }, config.TRANSITION_DURATION/ticker);
+  }
+  else if(from === 1 && to === 0) {
+    let id = setInterval(() => {
+      i++
+      if(i >= ticker/steps) {
+        Array.from(first).map(element => element.style.opacity = '1')
+        clearInterval(id)
+      }
+      else {
+        const opacity = (0 + steps*i/ticker).toString()
+        console.log(opacity)
+        Array.from(first).map(element => element.style.opacity = opacity)
+      }
+    }, config.TRANSITION_DURATION/ticker);
+  }
+}
