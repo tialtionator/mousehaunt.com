@@ -83,5 +83,13 @@ export const Hero = styled.section`
 
     text-align: justify;
     text-justify: inter-word;
+
+    .stores {
+      margin-top: 22.5px;
+
+      span {
+        margin-right: 10px;
+      }
+    }
   }
 `
