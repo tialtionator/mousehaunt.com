@@ -23,9 +23,9 @@ const Home: NextPage = () => {
         <Slide>
           <SecondSection/>
         </Slide>
-        <Slide>
+        {/* <Slide>
           <ThirdSection/>
-        </Slide>
+        </Slide> */}
       </FullPage>
     </Container>
   )
