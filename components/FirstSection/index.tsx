@@ -41,7 +41,7 @@ const FirstSection: NextPage<Props> = ({scrollToSlide}: Props) => {
         </div>
         <div className="bottom">
           <span>
-            Mouse Haunt is a rewarding, innovative and ever-growing universe where players can choose from different games to play and ways to earn, using the same NFTs between games. Buint in Unreal Engine 5 and integrated with Binance Chain.
+            Mouse Haunt is a kick ass play to earn universe. Built in Unreal Engine 5 and integrated with Binance Chain, you will be able to enjoy different ways to earn with amazing game play. Play on!
           </span>
           <div className="stores">
             <span>
