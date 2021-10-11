@@ -13,14 +13,14 @@ import isMobile from '../utils/isMobile';
 const Home: NextPage = () => {
   const [ref, setRef] = useState()
 
-  useEffect(() => {
-    if(isMobile()) {
-      window.addEventListener("scroll", function(e) {
-        const first = document.getElementsByClassName('first') as unknown as HTMLElement[];
-        hideFirst(first)
-      })
-    }
-  }, [])
+  // useEffect(() => {
+  //   if(isMobile()) {
+  //     window.addEventListener("scroll", function(e) {
+  //       const first = document.getElementsByClassName('first') as unknown as HTMLElement[];
+  //       hideFirst(first)
+  //     })
+  //   }
+  // }, [])
 
   return (
     <Container>
