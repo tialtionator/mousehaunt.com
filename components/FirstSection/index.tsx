@@ -1,10 +1,14 @@
 import type { NextPage } from 'next'
 
 import {Container, Header, Hero} from './styles'
+import beforeChange from './beforeChange'
 import Image from 'next/image'
-import config from '../../pages/utils/config'
 
-const FirstSection: NextPage = () => {
+interface Props {
+  scrollToSlide?: (n: number) => void
+}
+
+const FirstSection: NextPage<Props> = ({scrollToSlide}: Props) => {
   return (
     <Container id="home">
       <Header id="header" className="first">
@@ -21,10 +25,10 @@ const FirstSection: NextPage = () => {
           <a href="#home">
             Home
           </a>
-          <a href="#video">
+          <a href="#video" onClick={() => scrollToSlide && scrollToSlide(1)}>
             Video
           </a>
-          <a href="#whitelist">
+          <a href="#whitelist" onClick={() => scrollToSlide && scrollToSlide(2)}>
             Whitelist
           </a>
         </div>
@@ -67,39 +71,4 @@ const FirstSection: NextPage = () => {
 
 
 export default FirstSection
-
-export function beforeChange({from, to}: {from:number, to: number}) {
-  const first = document.getElementsByClassName('first') as unknown as HTMLElement[];
-  console.log({from, to})
-  const ticker = 10
-  const steps = 3
-  let i = 0
-  if(from === 0 && to === 1) {
-    let id = setInterval(() => {
-      i++
-      if(i >= ticker/steps) {
-        Array.from(first).map(element => element.style.opacity =  '0')
-        clearInterval(id)
-      }
-      else {
-        const opacity = (1 - steps*i/ticker).toString()
-        console.log(opacity)
-        Array.from(first).map(element => element.style.opacity = opacity)
-      }
-    }, config.TRANSITION_DURATION/ticker);
-  }
-  else if(from === 1 && to === 0) {
-    let id = setInterval(() => {
-      i++
-      if(i >= ticker/steps) {
-        Array.from(first).map(element => element.style.opacity = '1')
-        clearInterval(id)
-      }
-      else {
-        const opacity = (0 + steps*i/ticker).toString()
-        console.log(opacity)
-        Array.from(first).map(element => element.style.opacity = opacity)
-      }
-    }, config.TRANSITION_DURATION/ticker);
-  }
-}
+export {beforeChange}
