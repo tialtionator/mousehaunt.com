@@ -17,15 +17,15 @@ const Home: NextPage = () => {
       </Head>
 
       <FullPage duration={config.TRANSITION_DURATION} beforeChange={beforeChange}>
-        <Slide>
+        {/* <Slide>
           <FirstSection/>
         </Slide>
         <Slide>
           <SecondSection/>
-        </Slide>
-        {/* <Slide>
-          <ThirdSection/>
         </Slide> */}
+        <Slide>
+          <ThirdSection/>
+        </Slide>
       </FullPage>
     </Container>
   )

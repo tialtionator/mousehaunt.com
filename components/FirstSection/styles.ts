@@ -70,7 +70,7 @@ export const Hero = styled.section`
     line-height: 0.8;
 
     .mouse {
-
+      color: white;
     }
     .haunt {
       color: #92E2EB;
@@ -83,13 +83,5 @@ export const Hero = styled.section`
 
     text-align: justify;
     text-justify: inter-word;
-
-    .stores {
-      margin-top: 22.5px;
-
-      span {
-        margin-right: 10px;
-      }
-    }
   }
 `
