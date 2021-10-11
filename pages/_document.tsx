@@ -35,15 +35,12 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <meta name="google" content="notranslate" />
           <meta name="theme-color" content="#303030" />
-        <title>Mouse Haunt</title>
-        <meta name="description" content="Mouse Haunt" />
-        <link rel="icon" href="/favicon.ico" />
-
-          <link
-            rel="shortcut icon"
-            href="https://preview.cruip.com/switch/dist/images/logo-light.svg"
-          />
-
+          <meta name="description" content="Mouse Haunt" />
+          <link rel="icon" href="/favicon.ico" />
+          <link rel="preconnect" href="https://fonts.googleapis.com"/>
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=""/>
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_MEASUREMENT_ID}`}

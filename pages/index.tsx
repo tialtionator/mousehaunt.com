@@ -6,14 +6,13 @@ import { FullPage, Slide } from 'react-full-page';
 import {Container} from '../styles/Home'
 import FirstSection from '../components/FirstSection'
 import SecondSection from '../components/SecondSection'
+import ThirdSection from '../components/ThirdSection'
 
 const Home: NextPage = () => {
   return (
     <Container>
       <Head>
         <title>Mouse Haunt</title>
-        <meta name="description" content="Mouse Haunt" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <FullPage duration={1000}>
@@ -23,9 +22,9 @@ const Home: NextPage = () => {
         <Slide>
           <SecondSection/>
         </Slide>
-        <Slide>
-          <SecondSection/>
-        </Slide>
+        {/* <Slide>
+          <ThirdSection/>
+        </Slide> */}
       </FullPage>
     </Container>
   )
