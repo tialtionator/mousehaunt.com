@@ -1,7 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { FullPage, Slide } from 'react-full-page';
 
-import Container from '../styles/Home'
+
+import {Container} from '../styles/Home'
+import FirstSection from '../components/FirstSection'
+import SecondSection from '../components/SecondSection'
 
 const Home: NextPage = () => {
   return (
@@ -12,14 +16,17 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <video autoPlay muted loop>
-          <source src="https://s3.amazonaws.com/assets.mousehaunt.com/videos/TrailerCompress_v0_MouseHaunt.mp4" type="video/mp4"></source>
-        </video>
-      </main>
-
-      <footer>
-      </footer>
+      <FullPage duration={1000}>
+        <Slide>
+          <FirstSection/>
+        </Slide>
+        <Slide>
+          <SecondSection/>
+        </Slide>
+        <Slide>
+          <SecondSection/>
+        </Slide>
+      </FullPage>
     </Container>
   )
 }
