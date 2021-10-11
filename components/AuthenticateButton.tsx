@@ -30,11 +30,11 @@ const Container = styled.div`
   }
   pre {
     font-size: 120%;
+    @media only screen and (max-width: 600px) {
+      font-size: 100%;
+    }
   }
 
-  @media only screen and (max-width: 600px) {
-    margin-bottom: 100px;
-  }
 `;
 
 const AuthenticateButton: React.FC = () => {

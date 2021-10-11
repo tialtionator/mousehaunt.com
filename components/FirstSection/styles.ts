@@ -51,6 +51,10 @@ export const Container = styled.section`
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+
+    @media only screen and (max-width: 600px) {
+      top: 0;
+    }
   }
   
 `
@@ -63,11 +67,21 @@ export const Hero = styled.section`
 
   left: calc(100% /6);
 
+  @media only screen and (max-width: 600px) {
+    width: 320px;
+    left: 0px;
+    top: 80px;
+  }
+
   .top {
     font-family: 'Bebas Neue';
     font-size: 180px;
     font-weight: 700;
     line-height: 0.8;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 140px;
+    }
 
     .mouse {
       color: white;
@@ -90,6 +104,20 @@ export const Hero = styled.section`
       span {
         margin-right: 10px;
       }
+
+      @media only screen and (max-width: 600px) {
+        position: fixed;
+        bottom: 45px;
+      }
+    }
+  }
+
+  small {
+    @media only screen and (max-width: 600px) {
+      position: fixed;
+      bottom: 22.5px;
+      left: 0px;
+      margin-left: 22.5px;
     }
   }
 `

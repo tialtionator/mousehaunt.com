@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 
 import {Container, Header, Hero} from './styles'
-import beforeChange from './beforeChange'
+import beforeChange, {hideFirst} from './beforeChange'
 import Image from 'next/image'
 
 interface Props {
@@ -15,7 +15,7 @@ const FirstSection: NextPage<Props> = ({scrollToSlide}: Props) => {
         <div className="left">
           <a href="#home">
             <Image
-              src="https://s3.amazonaws.com/assets.mousehaunt.com/images/MH_Shinny_Logo.svg" 
+              src="https://s3.amazonaws.com/assets.mousehaunt.com/images/MH_Shinny_Logo.png" 
               width="53px"
               height="60px"
               alt="logo"/>
@@ -71,4 +71,4 @@ const FirstSection: NextPage<Props> = ({scrollToSlide}: Props) => {
 
 
 export default FirstSection
-export {beforeChange}
+export {beforeChange, hideFirst}

@@ -15,11 +15,26 @@ export const Container = styled.section`
     text-align: justify;
     text-justify: inter-word;
 
+    @media only screen and (max-width: 600px) {
+      margin-left: 0px;
+      width: 320px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    
+
     .top {
       font-family: 'Bebas Neue';
       font-size: 180px;
       font-weight: 700;
       line-height: 0.8;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 140px;
+      }
 
       .mouse {
       }
@@ -44,5 +59,12 @@ export const Container = styled.section`
   .image {
     height: 100vh;
     width: auto;
+
+    @media only screen and (max-width: 600px) {
+      top: 0;
+      div {
+        height: 100vh;
+      }
+    }
   }
 `
