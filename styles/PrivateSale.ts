@@ -51,6 +51,17 @@ export const Hero = styled.div`
     }
   }
 
+  .tokens {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+    div {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
   button {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -79,7 +90,7 @@ export const Hero = styled.div`
 export const Footer = styled.div`
   color: white;
   position: fixed;
-  bottom: 10px;
+  bottom: 0px;
   z-index: 1;
   font-size: 30px;
 
