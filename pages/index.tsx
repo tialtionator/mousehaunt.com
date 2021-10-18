@@ -7,20 +7,10 @@ import FirstSection, { beforeChange, hideFirst } from '../components/FirstSectio
 import SecondSection from '../components/SecondSection'
 import ThirdSection from '../components/ThirdSection'
 import config from '../utils/config';
-import { useEffect, useState } from 'react';
-import isMobile from '../utils/isMobile';
+import { useState } from 'react';
 
 const Home: NextPage = () => {
   const [ref, setRef] = useState()
-
-  // useEffect(() => {
-  //   if(isMobile()) {
-  //     window.addEventListener("scroll", function(e) {
-  //       const first = document.getElementsByClassName('first') as unknown as HTMLElement[];
-  //       hideFirst(first)
-  //     })
-  //   }
-  // }, [])
 
   return (
     <Container>
