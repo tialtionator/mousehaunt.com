@@ -1,19 +1,25 @@
-import Document, { Head, Html, Main, NextScript, DocumentContext } from 'next/document';
-import { ServerStyleSheet } from 'styled-components'
+import Document, {
+  Head,
+  Html,
+  Main,
+  NextScript,
+  DocumentContext,
+} from "next/document";
+import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
-    const sheet = new ServerStyleSheet()
-    const originalRenderPage = ctx.renderPage
+    const sheet = new ServerStyleSheet();
+    const originalRenderPage = ctx.renderPage;
 
     try {
       ctx.renderPage = () =>
         originalRenderPage({
           enhanceApp: (App) => (props) =>
             sheet.collectStyles(<App {...props} />),
-        })
+        });
 
-      const initialProps = await Document.getInitialProps(ctx)
+      const initialProps = await Document.getInitialProps(ctx);
       return {
         ...initialProps,
         styles: (
@@ -22,9 +28,9 @@ export default class MyDocument extends Document {
             {sheet.getStyleElement()}
           </>
         ),
-      }
+      };
     } finally {
-      sheet.seal()
+      sheet.seal();
     }
   }
 
@@ -36,11 +42,36 @@ export default class MyDocument extends Document {
           <meta name="google" content="notranslate" />
           <meta name="theme-color" content="#303030" />
           <meta name="description" content="Mouse Haunt" />
+          <meta
+            name="title"
+            content="Mouse Haunt - New NFT Game Play to Earn "
+          />
+          <meta
+            name="description"
+            content="Mouse Haunt is an Skill Based NFT Game Play to Earn in Binance Smart Chain. Earn money playing. "
+          />
+          <meta
+            name="keywords"
+            content="Mouse Haunt, Game Play to Earn, New Game Coin, Binance Smart Chain, Game Binance Smart Chain, NFT Game Play to Earn, Skill Based NFT Game, Original Blockchain Game"
+          />
+          <meta name="robots" content="index, follow" />
+          <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta name="language" content="English" />
           <link rel="icon" href="/favicon.ico" />
-          <link rel="preconnect" href="https://fonts.googleapis.com"/>
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=""/>
-          <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
-          <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin=""
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+            rel="stylesheet"
+          />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_MEASUREMENT_ID}`}
@@ -58,7 +89,7 @@ export default class MyDocument extends Document {
             }}
           />
         </Head>
-        <body style={{backgroundColor: 'black'}}>
+        <body style={{ backgroundColor: "black" }}>
           <Main />
           <NextScript />
         </body>
