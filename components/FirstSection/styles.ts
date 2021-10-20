@@ -1,12 +1,25 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  margin-left: 120px;
-  margin-right: 120px;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+
+  padding-left: 120px;
+  padding-right: 120px;
+
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(19, 21, 36, 0.3) 0%,
+      #131524 100%
+    ),
+    url("/images/fireplace.jpeg");
+  background-size: cover;
 `;
 
 export const Header = styled.header`
-  margin-top: 32px;
+  padding-top: 32px;
   display: flex;
   flex-direction: row;
   align-items: center;
