@@ -19,14 +19,7 @@ const FirstSection: NextPage = () => {
     <Container>
       <Header>
         <Logo>
-          <a>
-            <Image
-              src="/images/logo.png"
-              width="90px"
-              height="90px"
-              alt="logo"
-            />
-          </a>
+          <Image src="/images/logo.png" width="90px" height="90px" alt="logo" />
         </Logo>
         <Sections total={sections.length}>
           {sections.map((section) => (
