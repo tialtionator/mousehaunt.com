@@ -50,6 +50,7 @@ export const Social = styled.div`
   margin-top: 16px;
 
   a {
+    z-index: 1;
     margin-right: 16px;
   }
 
