@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding-left: 120px;
-  padding-right: 120px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;

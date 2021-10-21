@@ -3,9 +3,6 @@ import styled from "styled-components";
 export const Container = styled.section`
   margin-top: calc(80px - 518.86px);
 
-  padding-left: 120px;
-  padding-right: 120px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;

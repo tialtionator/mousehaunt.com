@@ -6,9 +6,6 @@ export const Container = styled.section`
   width: 100vw;
   height: 100vh;
 
-  padding-left: 120px;
-  padding-right: 120px;
-
   background: radial-gradient(
       50% 50% at 50% 50%,
       rgba(19, 21, 36, 0.3) 0%,
