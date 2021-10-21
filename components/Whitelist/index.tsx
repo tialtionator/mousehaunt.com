@@ -29,10 +29,11 @@ const Whitelist: NextPage = () => {
             <b>MOUSE HAUNT UNIVERSE</b>
           </Subtitle>
           <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu ut sem
-            et enim sed. Cras dolor tempus sed eros, sodales turpis vel proin
-            pharetra. Accumsan dolor luctus non scelerisque tellus. Ornare arcu
-            lacus nibh id sapien nunc risus.
+            This is without a doubt the best time to join the Mouse Haunt
+            Universe.
+            <br />
+            Acquire MHT now to become one of the earliest people to join! Don't
+            let the opportunity slip. Join Now.
           </Text>
           <Button>JOIN WHITELIST</Button>
         </BoxContent>

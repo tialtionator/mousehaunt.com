@@ -20,8 +20,8 @@ const MHT: NextPage = () => {
           <Chest>
             <Image
               src="/images/MHT.png"
-              width="512px"
-              height="338px"
+              width="540px"
+              height="473.5px"
               alt="MHT"
             />
           </Chest>

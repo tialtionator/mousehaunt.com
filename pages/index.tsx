@@ -11,6 +11,7 @@ import InviteFriends from "../components/InviteFriends";
 import InnovativeGameplay from "../components/InnovativeGameplay";
 import Bosses from "../components/Bosses";
 import MHT from "../components/MHT";
+import Team from "../components/Team";
 
 const Home: NextPage = () => {
   return (
@@ -28,6 +29,7 @@ const Home: NextPage = () => {
         <InviteFriends />
         <InnovativeGameplay />
         <MHT />
+        <Team />
       </div>
     </Container>
   );

@@ -72,5 +72,4 @@ export const Ellipse = styled.div`
   background: linear-gradient(96.82deg, #f2089f 0%, #1fc6ec 100%);
   mix-blend-mode: overlay;
   filter: blur(187px);
-  transform: rotate(105deg);
 `;
