@@ -8,6 +8,7 @@ import MouseHeroes from "../components/MouseHeroes";
 import GhostHeroes from "../components/GhostHeroes";
 import Whitelist from "../components/Whitelist";
 import InviteFriends from "../components/InviteFriends";
+import InnovativeGameplay from "../components/InnovativeGameplay";
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
         <GhostHeroes />
         <Whitelist />
         <InviteFriends />
+        <InnovativeGameplay />
       </div>
     </Container>
   );

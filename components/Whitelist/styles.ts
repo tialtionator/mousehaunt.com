@@ -21,6 +21,7 @@ export const Title = styled.div`
   font-size: 48px;
   line-height: 56px;
 
+  margin-top: -90px;
   padding-bottom: 64px;
 
   flex: none;
@@ -40,6 +41,7 @@ export const Title = styled.div`
 
 export const Box = styled.div`
   align-self: center;
+  margin-bottom: 90px;
 
   width: 706px;
   height: 301px;
