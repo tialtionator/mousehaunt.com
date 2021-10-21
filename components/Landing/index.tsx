@@ -30,7 +30,14 @@ const Landing: NextPage = () => {
     <Container id="About">
       <Header>
         <Logo>
-          <Image src="/images/logo.png" width="90px" height="90px" alt="logo" />
+          <a href="#">
+            <Image
+              src="/images/logo.png"
+              width="90px"
+              height="90px"
+              alt="logo"
+            />
+          </a>
         </Logo>
         <Sections total={sections.length}>
           {sections.map((section) => (
