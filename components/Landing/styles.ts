@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.section`
   top: 0px;
   left: 0px;
-  width: calc(100vw - 240px);
   height: 100vh;
 
   background: radial-gradient(

@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styled from "styled-components";
 
-import { Container } from "../styles/Home";
+import { Container, Content } from "../styles/Home";
 import Landing from "../components/Landing";
 import Welcome from "../components/Welcome";
 import MouseHeroes from "../components/MouseHeroes";
@@ -14,6 +14,7 @@ import Bosses from "../components/Bosses";
 import MHT from "../components/MHT";
 import Team from "../components/Team";
 import Footer from "../components/Footer";
+import { Ruler } from "../components/Ruler";
 
 const HideMobile = styled.div`
   @media only screen and (max-width: 600px) {
@@ -28,13 +29,15 @@ const Home: NextPage = () => {
         <title>Mouse Haunt</title>
       </Head>
 
-      <div>
+      <Content>
         <Landing />
         <HideMobile>
           <Welcome />
           <MouseHeroes />
           <GhostHeroes />
+          <Ruler />
           <Whitelist />
+          <Ruler />
           <InviteFriends />
           <InnovativeGameplay />
           <Bosses />
@@ -42,7 +45,7 @@ const Home: NextPage = () => {
           <Team />
           <Footer />
         </HideMobile>
-      </div>
+      </Content>
     </Container>
   );
 };

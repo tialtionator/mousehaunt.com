@@ -2,18 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   height: 100vh;
-  width: 100vw;
-  margin-left: -120px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-
-  border-top: 4px solid;
-  border-bottom: 4px solid;
-  border-image-source: linear-gradient(96.82deg, #f2089f 0%, #1fc6ec 100%);
-  border-image-slice: 1;
 `;
 
 export const Title = styled.div`

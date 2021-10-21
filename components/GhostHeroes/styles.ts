@@ -23,17 +23,16 @@ export const Ghost = styled.div`
 export const Ghost2 = styled.div`
   transform: rotate(-1.14deg) scale(0.4);
   opacity: 39%;
-  position: absolute;
-  right: calc(478px - 40px);
-  top: 2560px;
+  margin-top: -380px;
+  margin-left: -280px;
 `;
 
 export const Ghost3 = styled.div`
   transform: matrix(-1, -0.01, -0.01, 1, 0, 0) scale(0.5);
   opacity: 39%;
   position: absolute;
-  right: 0px;
-  top: 2600px;
+  margin-top: -380px;
+  margin-left: 240px;
 `;
 
 export const Phone = styled.div`
