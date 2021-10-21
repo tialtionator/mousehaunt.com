@@ -6,6 +6,7 @@ import Landing from "../components/Landing";
 import Welcome from "../components/Welcome";
 import MouseHeroes from "../components/MouseHeroes";
 import GhostHeroes from "../components/GhostHeroes";
+import Whitelist from "../components/Whitelist";
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
         <Welcome />
         <MouseHeroes />
         <GhostHeroes />
+        <Whitelist />
       </div>
     </Container>
   );

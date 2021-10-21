@@ -15,7 +15,7 @@ const Welcome: NextPage = () => {
   return (
     <Container id="About">
       <Title>
-        Welcome to <b>MOUSE HUANT</b>
+        Welcome to <b>MOUSE HAUNT</b>
       </Title>
       <Subtitle>
         Mouse Haunt provides a thrilling experience to every player throughout

@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
 
     color: white;
+    background-color: #131524;
     font-family: "Bebas Neue Pro Bold", Sans-serif;
 
     @font-face {
