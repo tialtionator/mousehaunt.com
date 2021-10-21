@@ -29,6 +29,7 @@ const Home: NextPage = () => {
         <Whitelist />
         <InviteFriends />
         <InnovativeGameplay />
+        <Bosses />
         <MHT />
         <Team />
         <Footer />
