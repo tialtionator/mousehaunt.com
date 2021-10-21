@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
 
     color: white;
     background-color: #131524;
-    font-family: "Bebas Neue Pro Bold", Sans-serif;
+    font-family: "Bebas Neue Pro Bold", sans-serif;
 
     @font-face {
       font-family: "Bebas Neue Pro Book";
