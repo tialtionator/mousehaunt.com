@@ -8,6 +8,7 @@ export const Container = styled.div`
   padding-right: 120px;
 
   @media only screen and (max-width: 600px) {
-    display: none;
+    padding-left: unset;
+    padding-right: unset;
   }
 `;

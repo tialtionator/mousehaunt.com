@@ -13,6 +13,10 @@ export const Container = styled.section`
     ),
     url("/images/fireplace.jpeg");
   background-size: cover;
+
+  @media only screen and (max-width: 600px) {
+    width: 100vw;
+  }
 `;
 
 export const Header = styled.header`
@@ -24,12 +28,24 @@ export const Header = styled.header`
   font-size: 20px;
   line-height: 23px;
 
+  @media only screen and (max-width: 600px) {
+    width: 100vw;
+    height: 60px;
+    background: #0f0e23;
+    padding: 16px;
+  }
+
   button {
     margin-left: auto;
   }
 `;
 export const Logo = styled.div`
   margin-right: 42px;
+
+  @media only screen and (max-width: 600px) {
+    width: 42px;
+    height: 42px;
+  }
 `;
 
 interface Props {
@@ -43,6 +59,10 @@ export const Sections = styled.div<Props>`
     margin-right: 32px;
     z-index: 1;
   }
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const Body = styled.div`
@@ -50,11 +70,22 @@ export const Body = styled.div`
   flex-direction: column;
   height: calc(100vh - 90px - 32px);
   justify-content: center;
+
+  @media only screen and (max-width: 600px) {
+    height: calc(100vh - 60px);
+    text-align: center;
+    align-items: center;
+  }
 `;
 
 export const BodyContent = styled.div`
   display: flex;
   flex-direction: row;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   small {
     font-size: 110%;
@@ -75,6 +106,15 @@ export const Title = styled.div`
   order: 0;
   flex-grow: 0;
   margin: 0px 0px;
+
+  @media only screen and (max-width: 600px) {
+    justify-content: center;
+
+    font-family: Bebas Neue Pro;
+    font-style: normal;
+    font-size: 80px;
+    line-height: 72px;
+  }
 `;
 
 export const Subtitle = styled.div`
@@ -85,6 +125,15 @@ export const Subtitle = styled.div`
   font-family: "SF Pro Display";
   font-size: 18px;
   line-height: 29px;
+
+  @media only screen and (max-width: 600px) {
+    width: 343px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+  }
 `;
 
 export const Stores = styled.div`
@@ -94,6 +143,12 @@ export const Stores = styled.div`
   span {
     margin-right: 8px;
   }
+
+  @media only screen and (max-width: 600px) {
+    div {
+      flex-direction: row;
+    }
+  }
 `;
 
 export const Left = styled.div``;
@@ -101,5 +156,14 @@ export const Left = styled.div``;
 export const Right = styled.div`
   filter: drop-shadow(5px 21px 46px rgba(0, 0, 0, 0.7));
   transform: rotate(-72.14deg) scale(1.5);
-  scale: 1.2;
+
+  @media only screen and (max-width: 600px) {
+    img {
+      width: 239.27px;
+      height: auto;
+      transform: rotate(-72deg) scale(1.75);
+    }
+    padding-top: 40px;
+    transform: scale(1.5);
+  }
 `;

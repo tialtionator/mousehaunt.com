@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import styled from "styled-components";
 
 import { Container } from "../styles/Home";
 import Landing from "../components/Landing";
@@ -14,6 +15,12 @@ import MHT from "../components/MHT";
 import Team from "../components/Team";
 import Footer from "../components/Footer";
 
+const HideMobile = styled.div`
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+`;
+
 const Home: NextPage = () => {
   return (
     <Container>
@@ -23,16 +30,18 @@ const Home: NextPage = () => {
 
       <div>
         <Landing />
-        <Welcome />
-        <MouseHeroes />
-        <GhostHeroes />
-        <Whitelist />
-        <InviteFriends />
-        <InnovativeGameplay />
-        <Bosses />
-        <MHT />
-        <Team />
-        <Footer />
+        <HideMobile>
+          <Welcome />
+          <MouseHeroes />
+          <GhostHeroes />
+          <Whitelist />
+          <InviteFriends />
+          <InnovativeGameplay />
+          <Bosses />
+          <MHT />
+          <Team />
+          <Footer />
+        </HideMobile>
       </div>
     </Container>
   );

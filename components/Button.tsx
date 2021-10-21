@@ -20,4 +20,11 @@ export const Button = styled.button`
   cursor: pointer;
 
   z-index: 1;
+
+  @media only screen and (max-width: 600px) {
+    width: 121px;
+    height: 40px;
+    margin: 0px 10px;
+    padding: unset;
+  }
 `;
