@@ -53,7 +53,6 @@ export const Ellipse1 = styled.div`
   width: 645px;
   height: 645px;
   left: 0px;
-  margin-top: calc(-645px / 2);
 
   background: linear-gradient(96.82deg, #0882f2 0%, #1fc6ec 100%);
   opacity: 0.15;
@@ -69,15 +68,13 @@ export const Ellipse2 = styled.div`
   width: 645px;
   height: 645px;
   right: 0px;
-  bottom: calc(645px / 2);
-  margin-top: calc(-645px / 2);
 
   position: absolute;
   background: linear-gradient(96.82deg, #cb61e4 0%, #be42d7 100%);
   opacity: 0.15;
   filter: blur(235px);
 
-  /* @media only screen and (max-width: 1280px) { */
-  transform: scale(0.5);
-  /* } */
+  @media only screen and (max-width: 1280px) {
+    transform: scale(0.5);
+  }
 `;

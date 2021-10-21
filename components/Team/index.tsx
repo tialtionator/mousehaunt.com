@@ -29,7 +29,7 @@ const Bosses: NextPage = () => {
       role: "3D Artist",
       description:
         "Luis Matamoros is a 3D artist and texturer that worked in Far Cry 6. An original creator of Mouse Haunt.",
-      src: "",
+      src: "/images/luis.png",
       social: {
         linkedin: "https://www.linkedin.com/in/luis-matamoros-1a854715a/",
       },
