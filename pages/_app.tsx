@@ -9,8 +9,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     overflow-x: hidden;
 
-    color:white;
-    font-family: "Bebas Neue Pro Bold";
+    color: white;
+    font-family: "Bebas Neue Pro Bold", Sans-serif;
 
     @font-face {
       font-family: "Bebas Neue Pro Book";
