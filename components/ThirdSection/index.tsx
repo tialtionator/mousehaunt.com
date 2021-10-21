@@ -1,42 +1,51 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next";
 
-import {Container} from './styles'
-import Image from 'next/image'
-import AuthenticateButton from '../../components/AuthenticateButton'
+import {
+  Container,
+  Left,
+  Right,
+  Title,
+  Subtitle,
+  Hero,
+  Phone,
+  Ellipse,
+} from "./styles";
+import Image from "next/image";
+import { Button } from "../Button";
 
 const ThirdSection: NextPage = () => {
   return (
-    <Container id="whitelist">
-      <div className="left">
-        <div className="top">
-          <div>
-            <span className="mouse">JOIN{' '}</span>
-            <span className="haunt">THE</span>
-          </div>
-          <div>
-            <span className="haunt">WHITE</span>
-            <span className="mouse">LIST</span>
-          </div>
-        </div>
-        <div className="bottom">
-          <span>
-            Connect your wallet and become part<br/>
-            of the Mouse Haunt Universe.
-          </span>
-        </div>
-        <div className="bottom authenticate">
-          <AuthenticateButton/>
-        </div>
-      </div>
-      <div className="image">
-        <Image src="https://s3.amazonaws.com/assets.mousehaunt.com/images/MainMenu_No-Columns.png"
-        width="1600px" height="1000px" layout="responsive" objectFit="cover"
-        alt="Main Menu"/>
-      </div>
+    <Container>
+      <Left>
+        <Hero>
+          <Image
+            src="/images/hero.png"
+            width="512px"
+            height="287px"
+            alt="Hero"
+          />
+        </Hero>
+        <Phone>
+          <Image
+            src="/images/phone-3.png"
+            width="640px"
+            height="497px"
+            alt="Phone"
+          />
+        </Phone>
+      </Left>
+      <Right>
+        <Title>Mouse Heroes NFT</Title>
+        <Subtitle>
+          Collect the rarest characters with the best stats! Mouse heroes also
+          have different abilities depending on their tail, weapon and hat!
+          Booster airdrop with our WHITELIST!
+        </Subtitle>
+        <Button>JOIN WHITELIST</Button>
+      </Right>
+      <Ellipse />
     </Container>
-  )
-}
+  );
+};
 
-
-
-export default ThirdSection
+export default ThirdSection;

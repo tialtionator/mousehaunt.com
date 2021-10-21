@@ -1,70 +1,74 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Container = styled.section`
-  color: white;
+  padding-top: 160px;
 
-  .left {
-    position: absolute;
-    z-index: 99;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    margin-left: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
 
-    text-align: justify;
-    text-justify: inter-word;
+export const Left = styled.div``;
 
-    @media only screen and (max-width: 600px) {
-      margin-left: 0px;
-      width: 320px;
+export const Right = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-      div {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-    
+  width: 478px;
 
-    .top {
-      font-family: 'Bebas Neue';
-      font-size: 180px;
-      font-weight: 700;
-      line-height: 0.8;
-
-      @media only screen and (max-width: 600px) {
-        font-size: 140px;
-      }
-
-      .mouse {
-      }
-      .haunt {
-        color: #92E2EB;
-      }
-
-      img {
-        height:100vh;
-      }
-    }
-
-    .bottom {
-      margin-left: 12.25px;
-    }
-    
-    .authenticate {
-      margin-top: 12.25px;
-    }
+  button {
+    width: 156px;
   }
+`;
 
-  .image {
-    height: 100vh;
-    width: auto;
+export const Hero = styled.div`
+  transform: rotate(-3.21deg) scale(0.8);
+  padding-left: 80px;
+`;
 
-    @media only screen and (max-width: 600px) {
-      top: 0;
-      div {
-        height: 100vh;
-      }
-    }
-  }
-`
+export const Phone = styled.div`
+  filter: drop-shadow(0px 0px 25.3695px rgba(0, 0, 0, 0.5));
+  transform: rotate(-90deg) scale(1.5);
+  margin-top: -180px;
+`;
+
+export const Title = styled.div`
+  font-family: "Bebas Neue Pro";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+
+  flex: none;
+  flex-grow: 0;
+`;
+
+export const Subtitle = styled.div`
+  padding-top: 16px;
+  padding-bottom: 40px;
+
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  flex: none;
+  flex-grow: 0;
+  margin: 16px 0px;
+`;
+
+export const Ellipse = styled.div`
+  position: absolute;
+  width: 569px;
+  height: 569px;
+  left: 672px;
+  top: calc(
+    100vh + 72px + 16px + 85px + 160px + 16px + 40px + 180px + 569px / 2
+  );
+
+  background: linear-gradient(96.82deg, #f2089f 0%, #1fc6ec 100%);
+  mix-blend-mode: overlay;
+  filter: blur(187px);
+`;

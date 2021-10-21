@@ -16,6 +16,7 @@ const Home: NextPage = () => {
       <div>
         <FirstSection />
         <SecondSection />
+        <ThirdSection />
       </div>
     </Container>
   );
