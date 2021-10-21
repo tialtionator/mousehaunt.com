@@ -2,9 +2,10 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 import { Container } from "../styles/Home";
-import FirstSection from "../components/FirstSection";
-import SecondSection from "../components/SecondSection";
-import ThirdSection from "../components/ThirdSection";
+import Landing from "../components/Landing";
+import Welcome from "../components/Welcome";
+import MouseHeroes from "../components/MouseHeroes";
+import GhostHeroes from "../components/GhostHeroes";
 
 const Home: NextPage = () => {
   return (
@@ -14,9 +15,10 @@ const Home: NextPage = () => {
       </Head>
 
       <div>
-        <FirstSection />
-        <SecondSection />
-        <ThirdSection />
+        <Landing />
+        <Welcome />
+        <MouseHeroes />
+        <GhostHeroes />
       </div>
     </Container>
   );

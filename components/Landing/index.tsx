@@ -13,10 +13,10 @@ import {
   Left,
   Right,
 } from "./styles";
-import { Button } from "../../components/Button";
+import { Button } from "../Button";
 import Image from "next/image";
 
-const FirstSection: NextPage = () => {
+const Landing: NextPage = () => {
   const sections = [
     "About",
     "Gameplay",
@@ -92,4 +92,4 @@ const FirstSection: NextPage = () => {
   );
 };
 
-export default FirstSection;
+export default Landing;

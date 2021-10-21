@@ -11,7 +11,7 @@ import {
 } from "./styles";
 import Image from "next/image";
 
-const SecondSection: NextPage = () => {
+const Welcome: NextPage = () => {
   return (
     <Container id="About">
       <Title>
@@ -41,4 +41,4 @@ const SecondSection: NextPage = () => {
   );
 };
 
-export default SecondSection;
+export default Welcome;

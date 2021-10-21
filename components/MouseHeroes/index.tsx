@@ -13,7 +13,7 @@ import {
 import Image from "next/image";
 import { Button } from "../Button";
 
-const ThirdSection: NextPage = () => {
+const MouseHeroes: NextPage = () => {
   return (
     <Container>
       <Left>
@@ -48,4 +48,4 @@ const ThirdSection: NextPage = () => {
   );
 };
 
-export default ThirdSection;
+export default MouseHeroes;
