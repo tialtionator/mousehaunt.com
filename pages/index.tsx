@@ -7,6 +7,7 @@ import Welcome from "../components/Welcome";
 import MouseHeroes from "../components/MouseHeroes";
 import GhostHeroes from "../components/GhostHeroes";
 import Whitelist from "../components/Whitelist";
+import InviteFriends from "../components/InviteFriends";
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
         <MouseHeroes />
         <GhostHeroes />
         <Whitelist />
+        <InviteFriends />
       </div>
     </Container>
   );
