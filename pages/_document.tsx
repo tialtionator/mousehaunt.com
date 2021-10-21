@@ -89,7 +89,7 @@ export default class MyDocument extends Document {
             }}
           />
         </Head>
-        <body style={{ backgroundColor: "black" }}>
+        <body style={{ backgroundColor: "#131524" }}>
           <Main />
           <NextScript />
         </body>

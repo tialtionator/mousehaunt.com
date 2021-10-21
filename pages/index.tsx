@@ -15,6 +15,7 @@ const Home: NextPage = () => {
 
       <div>
         <FirstSection />
+        <SecondSection />
       </div>
     </Container>
   );

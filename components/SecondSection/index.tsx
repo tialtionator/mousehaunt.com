@@ -1,15 +1,44 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next";
 
-import {Container} from './styles'
+import {
+  Container,
+  Title,
+  Subtitle,
+  Video,
+  Logo,
+  Ellipse1,
+  Ellipse2,
+} from "./styles";
+import Image from "next/image";
 
 const SecondSection: NextPage = () => {
   return (
-    <Container id="video">
-      <video autoPlay muted loop controls>
-        <source src="https://s3.amazonaws.com/assets.mousehaunt.com/videos/TrailerCompress_v0_MouseHaunt.mp4" type="video/mp4"></source>
-      </video>
+    <Container id="About">
+      <Title>
+        Welcome to <b>MOUSE HUANT</b>
+      </Title>
+      <Subtitle>
+        Mouse Haunt provides a thrilling experience to every player throughout
+        the play session. <br />
+        Built in Unreal Engine 5, the game excels in making its peaceful moments
+        feel fun by building up tension that unmistakably erupts in a satisfying
+        high-action beat.
+      </Subtitle>
+      <Video>
+        <Image
+          src="/images/video-1.jpeg"
+          width="808px"
+          height="430px"
+          alt="Video"
+        />
+      </Video>
+      <Logo>
+        <Image src="/images/logo.png" width="137px" height="137px" alt="Logo" />
+      </Logo>
+      <Ellipse1 />
+      <Ellipse2 />
     </Container>
-  )
-}
+  );
+};
 
-export default SecondSection
+export default SecondSection;
