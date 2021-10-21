@@ -53,6 +53,10 @@ export const Social = styled.div`
   justify-content: center;
   margin-top: 16px;
 
+  a {
+    margin-right: 16px;
+  }
+
   img {
     width: 16px;
     height: 16px;

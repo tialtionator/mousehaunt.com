@@ -60,6 +60,7 @@ const Bosses: NextPage = () => {
       src: "/images/antonio.jpeg",
       social: {
         linkedin: "https://www.linkedin.com/in/aviggiano/",
+        twitter: "https://twitter.com/agfviggiano",
       },
     },
     {
@@ -102,10 +103,10 @@ const Bosses: NextPage = () => {
                     rel="noreferrer"
                   >
                     <Image
-                      src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-                      width="16px"
-                      height="16px"
-                      alt={network}
+                      src={`/images/${network}.png`}
+                      width="24px"
+                      height="24px"
+                      alt={member.name}
                     />
                   </a>
                 ))}
@@ -137,10 +138,10 @@ const Bosses: NextPage = () => {
                     rel="noreferrer"
                   >
                     <Image
-                      src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-                      width="16px"
-                      height="16px"
-                      alt={network}
+                      src={`/images/${network}.png`}
+                      width="24px"
+                      height="24px"
+                      alt={advisor.name}
                     />
                   </a>
                 ))}
