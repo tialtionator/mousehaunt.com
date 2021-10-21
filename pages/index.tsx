@@ -10,6 +10,7 @@ import Whitelist from "../components/Whitelist";
 import InviteFriends from "../components/InviteFriends";
 import InnovativeGameplay from "../components/InnovativeGameplay";
 import Bosses from "../components/Bosses";
+import MHT from "../components/MHT";
 
 const Home: NextPage = () => {
   return (
@@ -26,7 +27,7 @@ const Home: NextPage = () => {
         <Whitelist />
         <InviteFriends />
         <InnovativeGameplay />
-        <Bosses />
+        <MHT />
       </div>
     </Container>
   );
