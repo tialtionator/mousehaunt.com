@@ -12,6 +12,7 @@ import InnovativeGameplay from "../components/InnovativeGameplay";
 import Bosses from "../components/Bosses";
 import MHT from "../components/MHT";
 import Team from "../components/Team";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
         <InnovativeGameplay />
         <MHT />
         <Team />
+        <Footer />
       </div>
     </Container>
   );
