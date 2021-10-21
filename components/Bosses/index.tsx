@@ -25,7 +25,7 @@ const Bosses: NextPage = () => {
           <Ellipse1 />
         </Mice>
         <Title>
-          Bosses, you said?! <b>WE HAVE'EM</b>
+          Bosses, you said?! <b>WE HAVE&apos;EM</b>
         </Title>
         <Subtitle>
           In the Mouse Haunt Universe, the danger lies everywhere. We bring you

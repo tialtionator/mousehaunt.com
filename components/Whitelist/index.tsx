@@ -32,7 +32,7 @@ const Whitelist: NextPage = () => {
             This is without a doubt the best time to join the Mouse Haunt
             Universe.
             <br />
-            Acquire MHT now to become one of the earliest people to join! Don't
+            Acquire MHT now to become one of the earliest people to join! Don&apos;t
             let the opportunity slip. Join Now.
           </Text>
           <Button>JOIN WHITELIST</Button>
