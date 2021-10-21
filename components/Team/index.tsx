@@ -9,10 +9,10 @@ const Bosses: NextPage = () => {
       name: "Pedro Camacho",
       role: "Co-Founder & CEO",
       description:
-        "Pedro started his career at Bandai Namco, working on titles like Street Fighter Mobile. Later, onto AAA gaming, he helped develop Halo Infinite and Gears of Wars 4 ",
+        "Pedro started his career at Bandai Namco, working on titles like Tekken and moved on to AAA gaming. Worked as a designer on titles such as Halo Infinite and Gears of Wars 5",
       src: "/images/pedro.jpeg",
       social: {
-        linkedin: "https://www.linkedin.com/in/luis-matamoros-1a854715a/",
+        linkedin: "https://www.linkedin.com/in/pedrocamachodandrea/",
       },
     },
     {
@@ -28,9 +28,46 @@ const Bosses: NextPage = () => {
       name: "Luis Matamoros",
       role: "3D Artist",
       description: "",
-      src: "/images/pedro.jpeg",
+      src: "",
       social: {
         linkedin: "https://www.linkedin.com/in/luis-matamoros-1a854715a/",
+      },
+    },
+    {
+      name: "Juan Valencia",
+      role: "Software Engineer",
+      description: "Worked in Magic the Gathering",
+      src: "",
+      social: {
+        linkedin: "https://www.linkedin.com/in/juanvalenciagd/",
+      },
+    },
+    {
+      name: "Petri Kauritsalo",
+      role: "Level Designer",
+      description: "",
+      src: "",
+      social: {
+        linkedin: "https://www.linkedin.com/in/petri-kauritsalo/",
+      },
+    },
+    {
+      name: "Lan Tong",
+      role: "2D Artist",
+      description: "",
+      src: "",
+      social: {
+        artstation: "https://www.artstation.com/lantong",
+      },
+    },
+    {
+      name: "Breno Mazza",
+      role: "Community Manager",
+      description:
+        "Specialist in SEO, Copywriting and advertising writing. Columnist for Blockchain Games.",
+      src: "",
+      social: {
+        linkedin: "https://www.linkedin.com/in/breno-mazza-966823111/",
       },
     },
   ];
@@ -48,9 +85,8 @@ const Bosses: NextPage = () => {
       name: "Caio Jahara",
       description: "Augmented reality pioneer\nFounder & CEO of R2U.io",
       src: "/images/caio.jpeg",
-
       social: {
-        linkedin: "https://www.linkedin.com/in/aviggiano/",
+        linkedin: "https://www.linkedin.com/in/caio-jahara-1b471680/",
       },
     },
     {
@@ -67,7 +103,7 @@ const Bosses: NextPage = () => {
       name: "Gustavo",
       description:
         "+8 years experience in accounting and finance, also a crypto enthusiast that work as advisor in other P2E projects ",
-      src: "/images/pedro.jpeg",
+      src: "",
       social: {
         linkedin:
           "https://www.linkedin.com/in/gustavo-sabino-975145114/ https://twitter.com/GuhS_NFT",
@@ -76,78 +112,82 @@ const Bosses: NextPage = () => {
   ];
   return (
     <>
-      <Container>
+      <Container id="Team">
         <Title>
-          Our <b>TEAM</b>
+          Created <b>by</b>
         </Title>
         <Members>
-          {members.map((member) => (
-            <Member key={member.name}>
-              <Photo>
-                <Image
-                  src={member.src}
-                  width="180px"
-                  height="180px"
-                  alt={member.name}
-                />
-              </Photo>
-              <h1>{member.name}</h1>
-              <h3>{member.role}</h3>
-              <span>{member.description}</span>
-              <Social>
-                {Object.keys(member.social).map((network) => (
-                  <a
-                    key={network}
-                    href={(member.social as any)[network]}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Image
-                      src={`/images/${network}.png`}
-                      width="24px"
-                      height="24px"
-                      alt={member.name}
-                    />
-                  </a>
-                ))}
-              </Social>
-            </Member>
-          ))}
+          {members
+            .filter((m) => m.src)
+            .map((member) => (
+              <Member key={member.name}>
+                <Photo>
+                  <Image
+                    src={member.src}
+                    width="180px"
+                    height="180px"
+                    alt={member.name}
+                  />
+                </Photo>
+                <h1>{member.name}</h1>
+                <h3>{member.role}</h3>
+                <span>{member.description}</span>
+                <Social>
+                  {Object.keys(member.social).map((network) => (
+                    <a
+                      key={network}
+                      href={(member.social as any)[network]}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Image
+                        src={`/images/${network}.png`}
+                        width="24px"
+                        height="24px"
+                        alt={member.name}
+                      />
+                    </a>
+                  ))}
+                </Social>
+              </Member>
+            ))}
         </Members>
 
         <Title>Advisors</Title>
         <Members>
-          {advisors.map((advisor) => (
-            <Member key={advisor.name}>
-              <Photo>
-                <Image
-                  src={advisor.src}
-                  width="180px"
-                  height="180px"
-                  alt={advisor.name}
-                />
-              </Photo>
-              <h1>{advisor.name}</h1>
-              <span>{advisor.description}</span>
-              <Social>
-                {Object.keys(advisor.social).map((network) => (
-                  <a
-                    key={network}
-                    href={(advisor.social as any)[network]}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Image
-                      src={`/images/${network}.png`}
-                      width="24px"
-                      height="24px"
-                      alt={advisor.name}
-                    />
-                  </a>
-                ))}
-              </Social>
-            </Member>
-          ))}
+          {advisors
+            .filter((a) => a.src)
+            .map((advisor) => (
+              <Member key={advisor.name}>
+                <Photo>
+                  <Image
+                    src={advisor.src}
+                    width="180px"
+                    height="180px"
+                    alt={advisor.name}
+                  />
+                </Photo>
+                <h1>{advisor.name}</h1>
+                <span>{advisor.description}</span>
+                <Social>
+                  {Object.keys(advisor.social).map((network) => (
+                    <a
+                      key={network}
+                      href={(advisor.social as any)[network]}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Image
+                        src={`/images/${network}.png`}
+                        width="24px"
+                        height="24px"
+                        alt={advisor.name}
+                      />
+                    </a>
+                  ))}
+                </Social>
+              </Member>
+            ))}
         </Members>
       </Container>
     </>

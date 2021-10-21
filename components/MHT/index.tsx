@@ -15,7 +15,7 @@ import { Button } from "../Button";
 const MHT: NextPage = () => {
   return (
     <>
-      <Container>
+      <Container id="Token">
         <Left>
           <Chest>
             <Image

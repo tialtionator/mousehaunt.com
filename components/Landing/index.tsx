@@ -27,7 +27,7 @@ const Landing: NextPage = () => {
     "Roadmap",
   ];
   return (
-    <Container>
+    <Container id="About">
       <Header>
         <Logo>
           <Image src="/images/logo.png" width="90px" height="90px" alt="logo" />

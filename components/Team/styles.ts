@@ -16,8 +16,7 @@ export const Container = styled.section`
   }
 `;
 
-export const Title = styled.div`
-  margin-top: 64px;
+export const Title = styled.h1`
   margin-bottom: 64px;
   z-index: 1;
 
@@ -67,6 +66,7 @@ export const Member = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 96px;
 
   h1 {
     font-family: "Bebas Neue Pro";

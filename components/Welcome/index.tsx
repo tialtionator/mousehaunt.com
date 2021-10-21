@@ -13,7 +13,7 @@ import Image from "next/image";
 
 const Welcome: NextPage = () => {
   return (
-    <Container id="About">
+    <Container id="Gameplay">
       <Title>
         Welcome to <b>MOUSE HAUNT</b>
       </Title>

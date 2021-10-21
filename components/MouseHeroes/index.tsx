@@ -15,7 +15,7 @@ import { Button } from "../Button";
 
 const MouseHeroes: NextPage = () => {
   return (
-    <Container>
+    <Container id="Value Proposition">
       <Left>
         <Hero>
           <Image
