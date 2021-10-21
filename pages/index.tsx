@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import { Container, Body } from "../styles/Home";
+import { Container } from "../styles/Home";
 import FirstSection from "../components/FirstSection";
 import SecondSection from "../components/SecondSection";
 import ThirdSection from "../components/ThirdSection";
@@ -13,11 +13,9 @@ const Home: NextPage = () => {
         <title>Mouse Haunt</title>
       </Head>
 
-      <Body>
+      <div>
         <FirstSection />
-        {/* <SecondSection /> */}
-        {/* <ThirdSection /> */}
-      </Body>
+      </div>
     </Container>
   );
 };

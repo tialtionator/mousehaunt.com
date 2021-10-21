@@ -17,4 +17,6 @@ export const Button = styled.button`
   flex-grow: 0;
   margin: 0px 10px;
   padding: 12px 32px;
+
+  cursor: pointer;
 `;
