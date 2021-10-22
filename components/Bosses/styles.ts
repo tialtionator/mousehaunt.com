@@ -98,6 +98,8 @@ export const Ellipse1 = styled.div`
 
   background: #0f0e23;
   filter: blur(15px);
+
+  opacity: 30%;
 `;
 
 export const Ellipse2 = styled.div`
@@ -113,4 +115,6 @@ export const Ellipse2 = styled.div`
   mix-blend-mode: overlay;
   filter: blur(187px);
   transform: rotate(-124.29deg);
+
+  opacity: 30%;
 `;

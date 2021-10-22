@@ -82,4 +82,6 @@ export const Ellipse = styled.div`
   mix-blend-mode: overlay;
   filter: blur(187px);
   transform: rotate(105deg);
+
+  opacity: 30%;
 `;
