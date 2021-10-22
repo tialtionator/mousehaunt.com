@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
-  reactStrictMode: true,
-  images: {
-    domains: ['s3.amazonaws.com', 'upload.wikimedia.org']
+const withReactSvg = require('next-react-svg')
+const path = require('path')
+
+module.exports = withReactSvg({
+  include: path.resolve(__dirname, 'assets/svg'),
+  webpack(config, options) {
+    return config
   }
-}
+})

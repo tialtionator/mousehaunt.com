@@ -6,13 +6,10 @@ import {
   Right,
   Title,
   Subtitle,
-  Ghost,
-  Ghost2,
-  Ghost3,
   Phone,
   Ellipse,
 } from "./styles";
-import Image from "next/image";
+import Ghost from "../../assets/svg/phone-4.svg";
 
 const GhostHeroes: NextPage = () => {
   return (
@@ -29,38 +26,9 @@ const GhostHeroes: NextPage = () => {
         </Subtitle>
       </Left>
       <Right>
-        <Ghost>
-          <Image
-            src="/images/ghost.png"
-            width="540px"
-            height="424px"
-            alt="Ghost"
-          />
-        </Ghost>
         <Phone>
-          <Image
-            src="/images/phone-4.png"
-            width="640px"
-            height="497px"
-            alt="Phone"
-          />
+          <Ghost />
         </Phone>
-        <Ghost2>
-          <Image
-            src="/images/ghost.png"
-            width="540px"
-            height="424px"
-            alt="Ghost"
-          />
-        </Ghost2>
-        <Ghost3>
-          <Image
-            src="/images/ghost.png"
-            width="540px"
-            height="424px"
-            alt="Ghost"
-          />
-        </Ghost3>
       </Right>
       <Ellipse />
     </Container>

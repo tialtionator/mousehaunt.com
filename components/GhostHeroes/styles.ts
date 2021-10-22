@@ -5,6 +5,11 @@ export const Container = styled.section`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 export const Left = styled.div`
@@ -13,32 +18,24 @@ export const Left = styled.div`
   justify-content: center;
 
   width: 478px;
+
+  @media only screen and (max-width: 600px) {
+    width: 343px;
+  }
 `;
 
 export const Right = styled.div``;
 
-export const Ghost = styled.div`
-  transform: rotate(4.44deg) scale(0.8);
-`;
-export const Ghost2 = styled.div`
-  transform: rotate(-1.14deg) scale(0.4);
-  opacity: 39%;
-  margin-top: -380px;
-  margin-left: -280px;
-`;
-
-export const Ghost3 = styled.div`
-  transform: matrix(-1, -0.01, -0.01, 1, 0, 0) scale(0.5);
-  opacity: 39%;
-  position: absolute;
-  margin-top: -380px;
-  margin-left: 240px;
-`;
-
 export const Phone = styled.div`
-  filter: drop-shadow(0px 0px 25.3695px rgba(0, 0, 0, 0.5));
-  transform: rotate(-80.31deg) scale(1.5);
-  margin-top: -300px;
+  @media only screen and (max-width: 600px) {
+    width: 100vw;
+    height: auto;
+
+    svg {
+      width: 100vw;
+      height: auto;
+    }
+  }
 `;
 
 export const Title = styled.div`
@@ -78,4 +75,8 @@ export const Ellipse = styled.div`
   filter: blur(187px);
 
   opacity: 30%;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
