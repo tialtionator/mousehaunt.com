@@ -36,13 +36,12 @@ export const Social = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 36px;
 
   a {
     padding: 10px;
   }
 
-  img {
+  svg {
     width: 36px;
     height: 36px;
   }
@@ -50,8 +49,8 @@ export const Social = styled.div`
 
 export const Ellipse1 = styled.div`
   position: absolute;
-  width: 645px;
-  height: 645px;
+  width: 445px;
+  height: 445px;
   left: 0px;
 
   background: linear-gradient(96.82deg, #0882f2 0%, #1fc6ec 100%);
@@ -65,8 +64,8 @@ export const Ellipse1 = styled.div`
 
 export const Ellipse2 = styled.div`
   position: absolute;
-  width: 645px;
-  height: 645px;
+  width: 445px;
+  height: 445px;
   right: 0px;
 
   position: absolute;

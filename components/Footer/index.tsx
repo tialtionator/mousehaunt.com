@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 
 import { Container, Title, Social, Logo, Ellipse1, Ellipse2 } from "./styles";
 import Image from "next/image";
+import { svg } from "../../utils/svg";
 
 const Footer: NextPage = () => {
   const social = {
@@ -22,12 +23,7 @@ const Footer: NextPage = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Image
-              src={`/images/${network}.png`}
-              width="36px"
-              height="36px"
-              alt={network}
-            />
+            {svg(network)}
           </a>
         ))}
       </Social>

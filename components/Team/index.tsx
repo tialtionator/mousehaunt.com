@@ -3,6 +3,8 @@ import type { NextPage } from "next";
 import { Container, Title, Members, Member, Photo, Social } from "./styles";
 import Image from "next/image";
 
+import { svg } from "../../utils/svg";
+
 const Bosses: NextPage = () => {
   const members = [
     {
@@ -18,7 +20,8 @@ const Bosses: NextPage = () => {
     {
       name: "Matheus Vilano",
       role: "Co-Founder & Head of Production",
-      description: "",
+      description:
+        "Matheus started as a musician and audio experience designer. After years of project management and game development, he became a Game Dev Instructor and Mentor",
       src: "/images/matheus.jpeg",
       social: {
         linkedin: "https://www.linkedin.com/in/matheusvilano/",
@@ -115,12 +118,20 @@ const Bosses: NextPage = () => {
     },
     {
       name: "Breno Mazza",
-      role: "Community Manager",
       description:
-        "Specialist in SEO, Copywriting and advertising writing. Columnist for Blockchain Games.",
-      src: "",
+        "Community Manager, specialist in SEO, copywriting and advertising writing. Columnist for Blockchain Games",
+      src: "/images/breno.jpeg",
       social: {
         linkedin: "https://www.linkedin.com/in/breno-mazza-966823111/",
+      },
+    },
+    {
+      name: "Daniel Portugal",
+      description:
+        "Daniel is a Senior Solidity Engineer, doing Ethereum, solidity and multi-blockchain contracts since 2017",
+      src: "/images/daniel.png",
+      social: {
+        linkedin: "https://www.linkedin.com/in/danielportugal/",
       },
     },
   ];
@@ -154,12 +165,7 @@ const Bosses: NextPage = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <Image
-                        src={`/images/${network}.png`}
-                        width="24px"
-                        height="24px"
-                        alt={member.name}
-                      />
+                      {svg(network)}
                     </a>
                   ))}
                 </Social>
@@ -191,12 +197,7 @@ const Bosses: NextPage = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <Image
-                        src={`/images/${network}.png`}
-                        width="24px"
-                        height="24px"
-                        alt={advisor.name}
-                      />
+                      {svg(network)}
                     </a>
                   ))}
                 </Social>

@@ -54,7 +54,7 @@ export const Social = styled.div`
     margin-right: 16px;
   }
 
-  img {
+  svg {
     width: 16px;
     height: 16px;
   }
