@@ -5,6 +5,7 @@ import {
   Mice,
   Title,
   Subtitle,
+  Phone,
   Video,
   Ellipse1,
   Ellipse2,
@@ -33,11 +34,13 @@ const Bosses: NextPage = () => {
           to wrecking balls. Killing Mouse Heroes creatively, with style!
         </Subtitle>
         <Video>
-          <Image
-            src="/images/bosses.png"
-            width="505px"
-            height="380px"
-            alt="Bosses"
+          <Phone />
+          <video
+            loop
+            autoPlay
+            src="/videos/EnvironmentalBosses.mp4"
+            width="851px"
+            height="416px"
           />
         </Video>
       </Container>

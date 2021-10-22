@@ -62,18 +62,31 @@ export const Mice = styled.div`
   transform: rotate(-3.03deg);
 `;
 
-export const Video = styled.div`
-  width: 816px;
-  height: 438px;
-  align-self: center;
-
-  margin-top: calc(0px - 816px / 2 - 3 * 40px);
+export const Phone = styled.div`
+  width: 851px;
+  height: 416px;
 
   filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
-  transform: rotate(-90deg) scale(2);
+  background-image: url("/images/iphone.png");
+  background-repeat: no-repeat;
+`;
 
-  img {
-    margin-left: -219px !important;
+export const Video = styled.div`
+  width: 851px;
+  height: 416px;
+  align-self: center;
+
+  overflow: hidden;
+  display: block;
+  border-radius: 80px;
+
+  video {
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    margin-top: -416px;
+    width: 851px;
+    height: auto;
   }
 `;
 
