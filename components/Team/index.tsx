@@ -21,7 +21,7 @@ const Bosses: NextPage = () => {
       name: "Matheus Vilano",
       role: "Co-Founder & Head of Production",
       description:
-        "Matheus started as a musician and audio experience designer. After years of project management and game development, he became a Game Dev Instructor and Mentor",
+        "Matheus started as a musician and audio experience designer. But his project management skills and deep understanding of game development allowed him to become a Game Dev Instructor and Mentor.",
       src: "/images/matheus.jpeg",
       social: {
         linkedin: "https://www.linkedin.com/in/matheusvilano/",
@@ -128,7 +128,7 @@ const Bosses: NextPage = () => {
     {
       name: "Daniel Portugal",
       description:
-        "Daniel is a Senior Solidity Engineer, doing Ethereum, solidity and multi-blockchain contracts since 2017",
+        "Daniel is a Senior Solidity Engineer, doing Ethereum, solidity and multi-blockchain contracts since 2017. Teaching Facilitator at MIT for the Blockchain: Disruptive Technology course",
       src: "/images/daniel.png",
       social: {
         linkedin: "https://www.linkedin.com/in/danielportugal/",

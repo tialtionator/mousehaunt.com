@@ -94,7 +94,7 @@ export const Member = styled.div`
   }
   span {
     width: 255px;
-    height: 120px;
+    height: 140px;
 
     white-space: pre-line;
     align-self: center;
