@@ -21,7 +21,7 @@ const Bosses: NextPage = () => {
       name: "Matheus Vilano",
       role: "Co-Founder & Head of Production",
       description:
-        "Matheus started as a musician and audio experience designer. But his project management skills and deep understanding of game development allowed him to become a Game Dev Instructor and Mentor.",
+        "Matheus started as a musician and audio experience designer. But his project management skills and deep understanding of game development allowed him to become a Game Dev Instructor and Mentor",
       src: "/images/matheus.jpeg",
       social: {
         linkedin: "https://www.linkedin.com/in/matheusvilano/",
