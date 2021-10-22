@@ -5,10 +5,6 @@ export const Container = styled.section`
   flex-direction: column;
   justify-content: center;
   text-align: center;
-
-  img {
-    width: 808px;
-  }
 `;
 
 export const Title = styled.div`
@@ -32,6 +28,11 @@ export const Title = styled.div`
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
   }
+
+  @media only screen and (max-width: 600px) {
+    width: 250px;
+    align-self: center;
+  }
 `;
 
 export const Subtitle = styled.div`
@@ -49,6 +50,10 @@ export const Subtitle = styled.div`
   /* or 133% */
 
   text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    width: 343px;
+  }
 `;
 
 export const Video = styled.div`
@@ -61,6 +66,15 @@ export const Video = styled.div`
   background: linear-gradient(96.82deg, #f2089f 0%, #1fc6ec 100%);
   box-shadow: 0px 0px 38.9803px rgba(0, 0, 0, 0.5);
   border-radius: 13px;
+
+  @media only screen and (max-width: 600px) {
+    width: 330px;
+    height: 187.86px;
+    iframe {
+      width: 345.71px;
+      height: 183.57px;
+    }
+  }
 `;
 
 export const Logo = styled.div`
@@ -73,6 +87,17 @@ export const Logo = styled.div`
   background: url(.png);
   filter: drop-shadow(0px 0px 32.9551px #1fc6ec);
   transform: rotate(15deg);
+
+  @media only screen and (max-width: 600px) {
+    width: 60.12px;
+    height: 60.12px;
+    position: relative;
+    margin-top: calc(0px - 187.86px - 60.12px / 2);
+    left: unset;
+    top: unset;
+
+    transform: rotate(-15deg);
+  }
 `;
 
 export const Ellipse1 = styled.div`
@@ -87,6 +112,13 @@ export const Ellipse1 = styled.div`
   filter: blur(187px);
 
   opacity: 30%;
+
+  @media only screen and (max-width: 600px) {
+    width: 123px;
+    height: 123px;
+    left: calc(50% + 350px / 2 - 350px / 2);
+    top: calc(100vh + 72px + 16px + 85px);
+  }
 `;
 
 export const Ellipse2 = styled.div`
@@ -102,4 +134,10 @@ export const Ellipse2 = styled.div`
   transform: rotate(105deg);
 
   opacity: 30%;
+
+  @media only screen and (max-width: 600px) {
+    width: 123px;
+    height: 123px;
+    top: calc(100vh + 72px + 16px + 85px + 123px);
+  }
 `;

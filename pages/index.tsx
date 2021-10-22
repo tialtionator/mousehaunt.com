@@ -31,8 +31,8 @@ const Home: NextPage = () => {
 
       <Content>
         <Landing />
+        <Welcome />
         <HideMobile>
-          <Welcome />
           <MouseHeroes />
           <GhostHeroes />
           <Ruler />
