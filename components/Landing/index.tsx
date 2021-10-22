@@ -24,7 +24,6 @@ const Landing: NextPage = () => {
     "Gameplay",
     "Value Proposition",
     "Token",
-    "Tokenomics",
     "Team",
     "Roadmap",
   ];
