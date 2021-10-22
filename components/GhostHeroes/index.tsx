@@ -15,11 +15,7 @@ const GhostHeroes: NextPage = () => {
   return (
     <Container>
       <Left>
-        <Title>
-          Ghost Heroes NFT
-          <br />
-          (coming soon)
-        </Title>
+        <Title>Ghost Villains NFT</Title>
         <Subtitle>
           When you die in a match, it’s not over, you get to play as a powerful
           ghost! NFTs with distinct abilities coming soon.

@@ -13,6 +13,7 @@ import InnovativeGameplay from "../components/InnovativeGameplay";
 import Bosses from "../components/Bosses";
 import MHT from "../components/MHT";
 import Team from "../components/Team";
+import PoweredBy from "../components/PoweredBy";
 import Footer from "../components/Footer";
 import { Ruler } from "../components/Ruler";
 
@@ -43,6 +44,9 @@ const Home: NextPage = () => {
           <Bosses />
           <MHT />
           <Team />
+          <Ruler />
+          <PoweredBy />
+          <Ruler />
           <Footer />
         </HideMobile>
       </Content>
