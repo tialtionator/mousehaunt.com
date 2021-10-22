@@ -4,6 +4,8 @@ import {
   Container,
   Header,
   Logo,
+  Video,
+  Phone,
   Sections,
   Body,
   Title,
@@ -86,12 +88,17 @@ const Landing: NextPage = () => {
             </Stores>
           </Left>
           <Right>
-            <Image
-              src="/images/phone-1.png"
-              width="640px"
-              height="497px"
-              alt="Phone"
-            />
+            <Video>
+              <Phone />
+              <video
+                loop
+                muted
+                autoPlay
+                src="/videos/LandingPage.mp4"
+                width="600px"
+                height="293px"
+              />
+            </Video>
           </Right>
         </BodyContent>
       </Body>

@@ -80,6 +80,7 @@ export const Body = styled.div`
 export const BodyContent = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
@@ -154,15 +155,56 @@ export const Left = styled.div``;
 
 export const Right = styled.div`
   filter: drop-shadow(5px 21px 46px rgba(0, 0, 0, 0.7));
-  transform: rotate(-72.14deg) scale(1.5);
+`;
+
+export const Phone = styled.div`
+  width: 600px;
+  height: 293px;
+
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
+  background-image: url("/images/iphone-600.png");
+  background-repeat: no-repeat;
 
   @media only screen and (max-width: 600px) {
-    img {
-      width: 239.27px;
-      height: auto;
-      transform: rotate(-72deg) scale(1.75);
+    background-image: url("/images/iphone-320.png");
+    width: 320px;
+    height: 156px;
+  }
+`;
+
+export const Video = styled.div`
+  margin-top: 40px;
+
+  width: 600px;
+  height: 293px;
+  align-self: center;
+
+  overflow: hidden;
+  display: block;
+
+  video {
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    width: 590px;
+    height: auto;
+
+    margin-top: -310px;
+    border-radius: 90px;
+
+    margin-left: 5px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 320px;
+    height: 156px;
+
+    video {
+      width: 314px;
+      margin-top: -166px;
+      border-radius: 45px;
+
+      margin-left: unset;
     }
-    padding-top: 40px;
-    transform: scale(1.5);
   }
 `;
