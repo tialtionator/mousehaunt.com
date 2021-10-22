@@ -37,6 +37,7 @@ const Bosses: NextPage = () => {
           <Phone />
           <video
             loop
+            muted
             autoPlay
             src="/videos/EnvironmentalBosses.mp4"
             width="851px"
