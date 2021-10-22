@@ -25,12 +25,20 @@ const Welcome: NextPage = () => {
         high-action beat.
       </Subtitle>
       <Video>
-        <Image
-          src="/images/video-1.jpeg"
-          width="808px"
-          height="430px"
-          alt="Video"
-        />
+        <iframe
+          width="806"
+          height="428"
+          style={{
+            borderRadius: "13px",
+            marginLeft: "-1px",
+            marginTop: "-1px",
+          }}
+          src="https://www.youtube.com/embed/U85LIlTqACk?autoplay=1"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </Video>
       <Logo>
         <Image src="/images/logo.png" width="137px" height="137px" alt="Logo" />

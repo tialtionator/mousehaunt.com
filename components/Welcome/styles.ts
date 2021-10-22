@@ -56,11 +56,11 @@ export const Video = styled.div`
   height: 438px;
   align-self: center;
 
-  padding-right: 8px;
+  padding-right: 13px;
 
   background: linear-gradient(96.82deg, #f2089f 0%, #1fc6ec 100%);
   box-shadow: 0px 0px 38.9803px rgba(0, 0, 0, 0.5);
-  border-radius: 12.9934px;
+  border-radius: 13px;
 `;
 
 export const Logo = styled.div`
