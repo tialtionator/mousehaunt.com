@@ -32,9 +32,9 @@ const Home: NextPage = () => {
       <Content>
         <Landing />
         <Welcome />
+        <MouseHeroes />
+        <GhostHeroes />
         <HideMobile>
-          <MouseHeroes />
-          <GhostHeroes />
           <Ruler />
           <Whitelist />
           <Ruler />

@@ -7,9 +7,18 @@ export const Container = styled.section`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
-export const Left = styled.div``;
+export const Left = styled.div`
+  @media only screen and (max-width: 600px) {
+    order: 1;
+  }
+`;
 
 export const Right = styled.div`
   display: flex;
@@ -20,18 +29,38 @@ export const Right = styled.div`
 
   button {
     width: 156px;
+    align-self: center;
+
+    @media only screen and (max-width: 600px) {
+      margin-top: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 343px;
+    margin-top: 80px;
   }
 `;
 
 export const Hero = styled.div`
   transform: rotate(-3.21deg) scale(0.8);
   padding-left: 80px;
+
+  @media only screen and (max-width: 600px) {
+    padding-left: 0px;
+    transform: rotate(-3.21deg) scale(0.45);
+  }
 `;
 
 export const Phone = styled.div`
   filter: drop-shadow(0px 0px 25.3695px rgba(0, 0, 0, 0.5));
   transform: rotate(-90deg) scale(1.5);
   margin-top: -180px;
+
+  @media only screen and (max-width: 600px) {
+    transform: rotate(-90deg) scale(1.25);
+    margin-top: -160px;
+  }
 `;
 
 export const Title = styled.div`
@@ -73,4 +102,8 @@ export const Ellipse = styled.div`
   filter: blur(187px);
 
   opacity: 30%;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
