@@ -93,6 +93,7 @@ export const Logo = styled.div`
     height: 60.12px;
     position: relative;
     margin-top: calc(0px - 187.86px - 60.12px / 2);
+    margin-left: calc((100vw - 375px) / 2);
     left: unset;
     top: unset;
 

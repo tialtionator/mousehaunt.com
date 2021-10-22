@@ -45,6 +45,10 @@ export const Box = styled.div`
 
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+
+  @media only screen and (max-width: 600px) {
+    width: 85vw;
+  }
 `;
 
 export const BoxContent = styled.div`
@@ -65,6 +69,10 @@ export const BoxContent = styled.div`
 
   button {
     margin-top: 40px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: calc(85vw - 16px);
   }
 `;
 
@@ -108,6 +116,23 @@ export const Text = styled.div`
   flex: none;
   flex-grow: 0;
   margin-top: 16px;
+
+  @media only screen and (max-width: 600px) {
+    width: 180px;
+
+    .second {
+      display: none;
+    }
+  }
+`;
+
+export const Mice = styled.div`
+  @media only screen and (max-width: 600px) {
+    margin-top: -120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;
 
 export const Mouse1 = styled.div`
@@ -119,6 +144,14 @@ export const Mouse1 = styled.div`
 
   filter: drop-shadow(0px 0px 26.2316px rgba(0, 0, 0, 0.5));
   transform: matrix(-1, 0, 0, 1, 0, 0) scale(0.9);
+
+  @media only screen and (max-width: 600px) {
+    margin-left: -40px;
+    width: 87px;
+    top: unset;
+    left: unset;
+    transform: matrix(-1, 0, 0, 1, 0, 0) scale(1);
+  }
 `;
 
 export const Mouse2 = styled.div`
@@ -130,6 +163,15 @@ export const Mouse2 = styled.div`
 
   filter: drop-shadow(0px 0px 23.1455px rgba(0, 0, 0, 0.5));
   transform: scale(0.9);
+
+  @media only screen and (max-width: 600px) {
+    margin-right: -20px;
+    width: 100px;
+
+    transform: scale(1);
+    top: unset;
+    right: unset;
+  }
 `;
 
 export const Ellipse1 = styled.div`
@@ -142,6 +184,10 @@ export const Ellipse1 = styled.div`
   background: rgba(0, 0, 0, 0.7);
   filter: blur(33.1753px);
   transform: rotate(-28.27deg);
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const Ellipse2 = styled.div`
@@ -154,4 +200,8 @@ export const Ellipse2 = styled.div`
   background: rgba(0, 0, 0, 0.7);
   filter: blur(33.1753px);
   transform: rotate(-28.27deg);
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;

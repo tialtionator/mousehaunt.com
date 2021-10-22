@@ -34,10 +34,10 @@ const Home: NextPage = () => {
         <Welcome />
         <MouseHeroes />
         <GhostHeroes />
+        <Ruler />
+        <Whitelist />
+        <Ruler />
         <HideMobile>
-          <Ruler />
-          <Whitelist />
-          <Ruler />
           <InviteFriends />
           <InnovativeGameplay />
           <Bosses />

@@ -9,6 +9,7 @@ import {
   Box,
   BoxContent,
   Text,
+  Mice,
   Mouse1,
   Mouse2,
 } from "./styles";
@@ -29,32 +30,38 @@ const Whitelist: NextPage = () => {
             <b>MOUSE HAUNT UNIVERSE</b>
           </Subtitle>
           <Text>
-            This is without a doubt the best time to join the Mouse Haunt
-            Universe.
+            <span className="first">
+              This is without a doubt the best time to join the Mouse Haunt
+              Universe.
+            </span>
             <br />
-            Acquire MHT now to become one of the earliest people to join! Don&apos;t
-            let the opportunity slip. Join Now.
+            <span className="second">
+              Acquire MHT now to become one of the earliest people to join!
+              Don&apos;t let the opportunity slip. Join Now.
+            </span>
           </Text>
           <Button>JOIN WHITELIST</Button>
         </BoxContent>
-        <Mouse1>
-          <Image
-            src="/images/mouse-1.png"
-            width="439px"
-            height="568px"
-            alt="Mouse 1"
-          />
-        </Mouse1>
-        <Ellipse1 />
-        <Mouse2>
-          <Image
-            src="/images/mouse-2.png"
-            width="452px"
-            height="552px"
-            alt="Mouse 2"
-          />
-        </Mouse2>
-        <Ellipse2 />
+        <Mice>
+          <Mouse1>
+            <Image
+              src="/images/mouse-1.png"
+              width="439px"
+              height="568px"
+              alt="Mouse 1"
+            />
+          </Mouse1>
+          <Ellipse1 />
+          <Mouse2>
+            <Image
+              src="/images/mouse-2.png"
+              width="452px"
+              height="552px"
+              alt="Mouse 2"
+            />
+          </Mouse2>
+          <Ellipse2 />
+        </Mice>
       </Box>
     </Container>
   );
